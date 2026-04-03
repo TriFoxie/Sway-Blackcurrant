@@ -235,3 +235,27 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+### SwayFX
+#                _   _               _          __  __ 
+# _ __  _ __ ___| |_| |_ _   _   ___| |_ _   _ / _|/ _|
+#| '_ \| '__/ _ \ __| __| | | | / __| __| | | | |_| |_ 
+#| |_) | | |  __/ |_| |_| |_| | \__ \ |_| |_| |  _|  _|
+#| .__/|_|  \___|\__|\__|\__, | |___/\__|\__,_|_| |_|  
+#|_|                     |___/                         
+
+shadows enable
+shadow_blur_radius 30
+shadow_color #000000AA
+
+blur enable
+blur_radius 5
+
+corner_radius 10
+
+layer_effects "waybar" {
+  blur enable
+  shadows enable
+}
+
+scratchpad_minimize disable

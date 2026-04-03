@@ -3,9 +3,16 @@
 !.gitignore
 
 !/.config/
+!/Pictures/
 
 /.config/*
+/Pictures/*
 
+!/Pictures/Wallpapers/
 !/.config/sway/
 !/.config/waybar/
 !/.config/kitty/
+
+/Pictures/Wallpapers/*
+
+!/Pictures/Wallpapers/PixelMoon.png

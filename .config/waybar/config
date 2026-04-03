@@ -1,0 +1,121 @@
+{
+//Info
+  "layer": "bot",
+  "spacing": 0,
+  "height": 0,
+  "margin-bottom": 0,
+  "margin-top": 15,
+  "position": "top",
+  "margin-right": 15,
+  "margin-left": 15,
+
+//Modules
+  "modules-left": [
+    "custom/applauncher",
+    "clock",
+    "sway/scratchpad"
+  ],
+  "modules-center": [
+    "cpu",
+    "sway/workspaces",
+    "hyprland/workspaces",
+    "memory"
+  ],
+  "modules-right": [
+    "network",
+    "tray",
+    "custom/bluetoothIcon",
+    "pulseaudio",
+    "battery"
+  ],
+
+//Module Configs
+  "sway/scratchpad": {
+    "format": "{count}",
+    "tooltip-format": "{app}: {title}",
+    "show-empty": true
+  },
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": false,
+    "tooltip": false
+  },
+  "custom/applauncher": {
+    "format": "〇",
+    "on-click": "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location=top-left -x 15 -y 15",
+    "tooltip": false
+  },
+  "custom/bluetoothIcon": {
+    "format": "BT",
+    "on-click": "kitty -e bluetui",
+    "tooltip": false
+  },
+  "tray": {
+    "spacing": 10,
+    "tooltip": false
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip": false,
+    "on-click": "kitty -e tuime -c yellow -c magenta"
+  },
+  "network": {
+    "format-wifi": "Wifi: {bandwidthDownBits}",
+    "format-ethernet": "Ethernet: {bandwidthDownBits}",
+    "format-disconnected": "No Network",
+    "interval": 5,
+    "tooltip": false,
+    "on-click": "kitty -e nmtui"
+  },
+  "pulseaudio": {
+    "scroll-step": 5,
+    "max-volume": 150,
+    "format": "{icon} {volume}",
+    "format-bluetooth": "{icon} {volume}",
+    "format-icons": [
+      ".",
+      ".)",
+      ".)",
+      ".))",
+      ".))",
+      ".)))"
+    ],
+    "nospacing": 1,
+    "format-muted": "x",
+    "on-click": "kitty -e wiremix",
+    "tooltip": false
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "{capacity}%",
+    "format-plugged": "{capacity}%",
+    "format-alt": "{icon} {time}",
+    "format-full": "{capacity}%",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "cpu": {
+    "format": "CPU:{usage}%",
+    "tooltip": false,
+    "interval": 2,
+    "on-click": "gnome-system-monitor"
+  },
+  "memory":{
+    "format": "RAM:{}%",
+    "tooltip": false,
+    "interval": 2,
+    "on-click": "gnome-system-monitor"
+  },
+}

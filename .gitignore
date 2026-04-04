@@ -13,6 +13,7 @@
 !/.config/waybar/
 !/.config/kitty/
 !/.config/swaync/
+!/.config/wofi/
 
 /Pictures/Wallpapers/*
 

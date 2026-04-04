@@ -1,0 +1,41 @@
+* {
+	font-family: Maple Mono;
+	background: transparent;
+	color: #d8cab8;
+}
+
+#window {
+	color: #d8cab8;
+	border: solid #d8cab8 1px;
+	border-radius: 14px;	
+
+	background-image: linear-gradient(to bottom, #141216 100%);
+}
+
+#scroll {
+	border-top-style: solid;
+	border: 1px #d8cab8;
+}
+#inner-box {
+	padding: 12px 0;
+}
+#entry {
+	border: none;
+}
+#input {
+	padding: 12px 20px;
+	font-style: normal;
+	border: none;
+	border-bottom: solid 1px #d8cab8;
+	border-radius: 8px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+#input:focus {
+	border-color: #d8cab8;
+	font-style: italic;
+}
+#img {
+	padding: 4px;
+	margin-right: 6px;
+}

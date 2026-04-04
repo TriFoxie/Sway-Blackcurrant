@@ -16,3 +16,5 @@
 /Pictures/Wallpapers/*
 
 !/Pictures/Wallpapers/PixelMoon.png
+
+*.swp

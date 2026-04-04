@@ -26,10 +26,18 @@
     "tray",
     "custom/bluetoothIcon",
     "pulseaudio",
-    "battery"
+    "battery",
+    "custom/notifications"
   ],
 
 //Module Configs
+  "custom/notifications": {
+    "format": "{}",
+    "exec": "~/.config/waybar/scripts/snc-count.sh",
+    "on-click": "sleep 0.01; swaync-client -t -sw",
+    "on-click-right": "swaync-client -C",
+    "interval": 5
+  },
   "sway/scratchpad": {
     "format": "{count}",
     "tooltip-format": "{app}: {title}",

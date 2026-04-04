@@ -81,6 +81,9 @@ input "2362:8197:ASUP1204:00_093A:2005_Touchpad" {
 # Start a terminal
 bindsym $mod+Return exec $term
 
+# htop
+bindsym CONTROL+SHIFT+Escape exec $term -e htop
+
 # Kill focused window
 bindsym $mod+q kill
 

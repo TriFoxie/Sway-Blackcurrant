@@ -1,0 +1,37 @@
+.control-center {
+  border: 1px solid #ac82e9;
+  background-color: rgba(20, 18, 22, 0.7);
+  color: #d8cab8;
+  /*Overall*/
+}
+
+.widgets .widget,
+.widget-mpris carouselindicatordots,
+.widget-mpris box button {
+  background: #d8cab8;
+  border-radius: 10px;
+  padding: 5px;
+  color: #fff;
+  /*Player buttons*/
+}
+
+.control-center-list-placeholder {
+  padding: 0;
+  /*No natifs icon/message*/
+}
+
+.notification-group {
+  /*Container for notification stack*/
+}
+
+.widget-mpris box button:hover {
+  background: transparent;
+  /*Player controls hover*/
+}
+.widget-mpris-player {
+  background-color: #141216;
+  box-shadow: none;
+  border: 1px solid #d8cab8;
+  margin: 0;
+  /*Audio player*/
+}

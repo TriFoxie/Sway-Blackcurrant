@@ -12,6 +12,7 @@
 !/.config/sway/
 !/.config/waybar/
 !/.config/kitty/
+!/.config/swaync/
 
 /Pictures/Wallpapers/*
 

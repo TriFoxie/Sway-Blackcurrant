@@ -26,7 +26,7 @@ git clone https://github.com/trifoxie/sway-blackcurrant
 ```
 
 Make backups (optional):
-```
+```bash
 cp -r ~/.config/sway/ ~/.config_backup/sway_$(date + %Y%m%d)
 cp -r ~/.config/swaync/ ~/.config_backup/swaync_$(date + %Y%m%d)
 cp -r ~/.config/waybar/ ~/.config_backup/waybar_$(date + %Y%m%d)
